@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    line-height: 1.6;
+    /* background-color: transparent; */
+    color: white;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;}
+.akwaaba-btns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 80px;
+}
+.b1{
+    border: transparent;
+    background: #6592bc;
+    color: whitesmoke;
+    padding: 20px 30px;
+    transition: all 0.3s;
+}
+.b1:hover{
+    color: white;
+    background: #6592bc;
+    transition: all 0.3s;
+    border:transparent;
+    transform: translateY(-10px);
+}
+.akwaaba-btns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.b1{
+    border: transparent;
+    background: #6592bc;
+    color: whitesmoke;
+    padding: 20px 50px;
+    transition: all 0.3s;
+}
+.b1:hover{
+    color: white;
+    background: #6592bc;
+    transition: all 0.3s;
+    border:transparent;
+    transform: translateY(-10px);
+}
+.h1{
+    text-align: center;
+    font-size: 4rem;
+}
+.containerss{
+    max-width: 5000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.booking-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid transparent; 
+    border-radius: 5px;
+    background-color: #6592bc; 
+    color: #fff;
+    box-shadow: 0 2px 10px #6592bc;
+
+}
+
+.booking-form h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.booking-form p {
+    color: #eee;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #eee;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    padding-right: 25px;
+}
+
+.booking-form button[type="submit"] {
+    background-color: #fff;
+    color: #6592bc;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.booking-form button[type="submit"]:hover {
+    background-color: #6592bc;
+    border:1px solid whitesmoke;
+    color: whitesmoke;
+}
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #E2E8F0;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #A0AEC0;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #4A5568;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #3182CE;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #4A5568;
+    color: #A0AEC0;
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+ @media (max-width: 768px) {
+
+}
+

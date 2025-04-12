@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <section class="highlights">
+        <div class="containerss">
+            <div class="highlights-grid">
+                <form action="/your-submission-page" method="post" class="booking-form" id="bookingform">
+                    <h2 class="h1">Book Your Ghanaian Experience</h2>
+                    <p>Ready to embark on your Ghanaian adventure? Fill out the form below and we'll get in touch to finalize your booking.</p>
+                
+                    <div class="form-group">
+                        <label for="full_name">Your Full Name:</label>
+                        <input type="text" id="name" name="full_name" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="email">Your Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="phone">Your Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="tour_selection">Select Your Tour/Experience:</label>
+                        <select id="tour_selection" name="tour_selection" required>
+                            <option value="">-- Please Select --</option>
+                            <option value="accra_city_tour">Accra City Tour</option>
+                            <option value="cape_coast_elmina_day_trip">Cape Coast & Elmina Day Trip</option>
+                            <option value="kakum_aburi_nature_escape">Larabanga & Mole National Park reserve</option>
+                            <option value="kakum_aburi_nature_escape">Boti Falls</option>
+                            <option value="kakum_aburi_nature_escape">Lake Volta</option>
+                            <option value="kakum_aburi_nature_escape">Lake Bosomtwe</option>
+                            <option value="kakum_aburi_nature_escape">Kakum & Aburi Nature Escape</option>
+                            <option value="kakum_aburi_nature_escape">Busua Beach</option>
+                            <option value="kakum_aburi_nature_escape">Kokrobite Beach</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="preferred_date">Preferred Date(s) of Travel:</label>
+                        <input type="date" id="preferred_date" name="preferred_date" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="adults">Number of Adults:</label>
+                        <input type="number" id="adults" name="adults" min="1" value="1" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="children">Number of Children (Optional):</label>
+                        <input type="number" id="children" name="children" min="0" value="0">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="comments">Any Specific Requests or Comments:</label>
+                        <textarea id="comments" name="comments" rows="5"></textarea>
+                    </div>
+                    <div id="successMessage">
+                    <button type="submit" id="submit">Complete Booking</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="akwaaba-btns">
+        <a href="index.html"><button class="b1">Go Back</button></a>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Socials</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Reference</h3>
+                    <ul>
+                        <li><a href="https://www.pinterest.com/search/pins/?q=ghana&rs=ac&len=5&source_id=fFTa1ZUB&eq=gjana&etslf=6320">Pinterest</a></li>
+                        <li><a href="https://pixabay.com/images/search/ghana/">Pixabay</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Ghana">Wikipedia</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Client</h3>
+                    <ul>
+                        <li><a href="https://www.motac.gov.gh/">The Ministry of Tourism, Culture & Creative Arts(MOTAC)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="https://maps.app.goo.gl/E8NmRXaiLixjFW3j7">Old Cemetary Rd, Accra</a></li>
+                        <li><a href="mailto:ibrahimabdulrahman9157@gmail.com">ibrahimabdulrahman9157@gmail.com</a></li>
+                        <li><a href="tel:0557274211">0557274211</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 JOURNI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

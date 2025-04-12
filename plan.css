@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    line-height: 1.6;
+    /* background-color: transparent; */
+    color: white;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.containers{
+    max-width: 8000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.containerss{
+    max-width: 5000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    top: 0;
+    z-index: 100;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+}
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+.hamburger-menu {
+    display: none; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #ffffff; 
+}
+
+.hamburger-menu:focus {
+    outline: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding-right: 50px;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links.open {
+    display: flex;
+    flex-direction: column; 
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9); 
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 10; 
+}
+
+.nav-links.open li {
+    margin: 10px 0;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-right: 50px;
+}
+
+nav li {
+    margin-left: 30px;
+}
+nav a {
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: whitesmoke;
+}
+.logo:hover{
+    color: whitesmoke;
+
+}
+.hp{
+    background: url(img/sback.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+ 
+}
+.akwaaba{
+    padding-top: 40px;
+    text-align: center;
+}
+.akwaaba h1{
+    font-size: 7rem;
+    color: white;
+}
+h1{
+    font-size: 5rem;
+    /* color: #6592bc; */
+}
+.akwaaba p{
+    font-size: 1.3rem;
+    color: white;
+}
+.akwaaba-btns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 80px;
+}
+.b1{
+    border: transparent;
+    background: #6592bc;
+    color: whitesmoke;
+    padding: 25px 60px;
+    transition: all 0.3s;
+    box-shadow: 0 2px 10px #6592bc;
+}
+.b1:hover{
+    color: white;
+    background: #6592bc;
+    transition: all 0.3s;
+    border:transparent;
+    transform: translateY(-10px);
+}
+.h1{
+    text-align: center;
+    font-size: 4rem;
+    color: #6592bc;
+    padding-top: 30px;
+    display: flex;
+    justify-self: center;
+    border-bottom: 3px solid #6592bc;
+}
+.p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.highlights-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding-top: 40px;
+}
+.highlights-card {
+    border: 1px solid transparent;
+    background: whitesmoke;
+    height: 325px;
+    color: #6592bc;
+    justify-content: space-evenly;
+    transition: transform 0.3s, all 0.3s;
+    box-shadow: 0 2px 10px #6592bc;
+   
+}
+.highlights-card:hover {
+    transform: translateY(-10px);
+    background: #6592bc;
+    color: whitesmoke;
+    border: 1px solid #6592bc;
+}
+.highlights-card h1{
+    font-size: xx-large;
+    /* color: sandybrown; */
+}
+.highlights-card p{
+    font-size: small;
+    text-align: center;
+    /* color: #6592bc; */
+}
+.highlightss-card h1{
+    font-size: x-large;
+}
+.highlightss-card p{
+    font-size: small;
+    text-align: center;
+}
+.hid{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 20px;
+    color: rgb(247, 183, 128);
+}
+.inner{
+    border: 1px solid transparent;
+    height: 200px;
+}
+.upto{
+    display: flex;
+}
+.db{
+    display: flex;
+    color: black;
+    background: transparent;
+    border: 2px solid black;
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: all 0.3s;
+    justify-self: center;
+}
+p{
+    padding-top: 10px;
+}
+.db:hover{
+    background: black;
+    border: 2px solid white;
+    color: white;
+}
+.his1{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 50px;
+}
+.head{
+    font-size: 2.7rem;
+    text-align: center;
+    /* color: #6592bc; */
+}
+ footer{
+    background: #ffffff;
+ }
+#btt{
+    display: flex;
+    justify-self: center;
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+#btt:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+.booking-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid transparent; 
+    border-radius: 5px;
+    background-color: #6592bc; 
+    color: #fff;
+    box-shadow: 0 2px 10px #6592bc;
+
+}
+
+.booking-form h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.booking-form p {
+    color: #eee;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #eee;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    padding-right: 25px;
+}
+
+.booking-form button[type="submit"] {
+    background-color: #fff;
+    color: #000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.booking-form button[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 60px 0 30px;
+    margin-top: 10px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #E2E8F0;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #A0AEC0;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #4A5568;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #3182CE;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #4A5568;
+    color: #A0AEC0;
+    font-size: 14px;
+}
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .header-container {
+        padding: 15px 20px; 
+    }
+
+    .logo {
+        font-size: 20px; 
+    }
+    .akwaaba h1{
+        font-size: 4.3rem;
+        padding-top: 30px;
+    }
+}
+
+
