@@ -197,12 +197,12 @@ h1{
 .highlights-card:hover{
     background: gold;
     transform: translateY(-10px);
-    color: #ffffff;
+    color: #000000;
 }
 .highlightss-card:hover{
     background: gold;
     transform: translateY(-10px);
-    color: #ffffff;
+    color: #000000;
 }
 .highlights-card h1{
     font-size: x-large;
